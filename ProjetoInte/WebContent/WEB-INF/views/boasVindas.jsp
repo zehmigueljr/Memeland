@@ -1,21 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Boas Vindas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    
+	<link rel="stylesheet" type="text/css" href="../../../SemanticUI/semantic/dist/semantic.rtl.min.css">
+    
+	<title>
+        MemeLand
+    </title>
 </head>
-<body>
-	<center>		
-		<h2>Nesse post aprendemos a configurar o Spring MVC</h2>	
+	<body>
 		<ul>
-			<c:forEach var="conteudo" items="${listaConteudos}">
+		<!--	<c:forEach var="conteudo" items="${listaConteudos}">
 				<li><c:out value="${conteudo.nome}"/></li>
 				<li><c:out value="${conteudo.dataCadastro}"/></li>
 			</c:forEach>
-		</ul>
-	</center>
-</body>
+		</ul> -->
+		<div class="ui menu top fixed"></div>
+
+
+	</body>
+<script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../../SemanticUI/semantic/dist/semantic.min.js"></script>
 </html>
