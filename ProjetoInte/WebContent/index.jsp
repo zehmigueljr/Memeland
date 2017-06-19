@@ -20,7 +20,7 @@ function Redirecionar(){
 <body>
 
 	<center>
-		<h2>Testando</h2>
+		<h2>Testandu</h2>
 		<h3>
 			<a href="#" onclick="Redirecionar();">Click aqui para informar o nome</a>
 		</h3>
