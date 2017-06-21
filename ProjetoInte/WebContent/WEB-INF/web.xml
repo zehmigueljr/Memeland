@@ -4,7 +4,7 @@
 <display-name>Sistema Spring MVC</display-name>
 
 <welcome-file-list>
-	<welcome-file>index.jsp</welcome-file>
+	<welcome-file>./WEB-INF/views/index.jsp</welcome-file>
 </welcome-file-list> 
 
 <servlet>
@@ -30,6 +30,5 @@
 		org.springframework.web.context.ContextLoaderListener
 	</listener-class>
 </listener>
-
 
 </web-app>
