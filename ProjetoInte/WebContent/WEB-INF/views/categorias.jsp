@@ -228,6 +228,7 @@
 	<div class="ui equal width grid content-margin-top ">
 		<div class="column">
 			<h3 class="header texto-branco">Imagens/Gifs</h3>
+			<h2 class=""></h2>
 			
 			
 		</div>
