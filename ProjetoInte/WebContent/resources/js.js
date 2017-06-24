@@ -8,4 +8,4 @@ $('#btn-cadastro').click(function(){
 	$('#modal-cadastro').modal('show');
 });
 
-$('.ui.radio.checkbox').checkbox();
+$('.ui.checkbox').checkbox();

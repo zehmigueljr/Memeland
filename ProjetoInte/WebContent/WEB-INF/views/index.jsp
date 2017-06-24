@@ -40,52 +40,59 @@
 		</div>
 		<div class="content">
 			<div class="ui column centered grid">
-				<div class="four wide column"></div>
-				<div class="eight wide column">
-					<button class="ui large labeled icon fluid facebook button">
-					  <i class="facebook icon"></i>
-					   Login com Facebook
-					</button>
+				<div class="row">
+					<div class="computer only column"></div>
+					<div class="eight wide computer sixteen wide mobile column">
+						<button class="ui large labeled icon fluid facebook button">
+						  <i class="facebook icon"></i>
+						   Login com Facebook
+						</button>
+					</div>
+					<div class="computer only column"></div>
 				</div>
-				<div class="four wide column"></div>
 				
-				<div class="four wide column"></div>
-				<div class="eight wide column">
-					<button class="ui large labeled icon fluid twitter button">
-					  <i class="twitter icon"></i>
-					  	Login com Twitter
-					</button>
+				<div class="row">
+					<div class="computer only column"></div>
+					<div class="eight wide computer sixteen wide mobile column">
+						<button class="ui large labeled icon fluid twitter button">
+						  <i class="twitter icon"></i>
+						  	Login com Twitter
+						</button>
+					</div>
+					<div class="computer only column"></div>
 				</div>
-				<div class="four wide column"></div>
 				
-				<div class="four wide column"></div>
-				<div class="eight wide column">
-					<button class="ui large labeled icon fluid google plus button">
-					  <i class="google plus icon"></i>
-					  	Login com Google Plus
-					</button>
+				<div class="row">
+					<div class="computer only column"></div>
+					<div class="eight wide computer sixteen wide mobile column">
+						<button class="ui large labeled icon fluid google plus button">
+						  <i class="google plus icon"></i>
+						  	Login com Google Plus
+						</button>
+					</div>
+					<div class="computer only column"></div>
 				</div>
-				<div class="four wide column"></div>
-				
-				<div class="three wide column"></div>
-				<div class="ten wide column">
-					<form class="ui form inverted attached segment">
-					  <div class="field">
-					    <label for="email-login">E-mail</label>
-					    <input type="email" name="email-login" placeholder="example@memeland.com.br">
-					  </div>
-					  <div class="field">
-					    <label for="password-login">Senha</label>
-					    <input type="password" name="password-login" placeholder="Informe sua senha">
-					  </div>
-					  <div class="ui error message"></div>
-					</form>
-					<div class="ui two bottom attached buttons">
-					  	<button class="ui facebook  button" id="btn-cadastro">Cadastre-se</button>
-					   	<button class="ui red  button" type="submit">Login</button>
-					  </div>
+				<div class="row">
+					<div class="computer only column"></div>
+					<div class="ten wide computer sixteen wide mobile column">
+						<form class="ui form inverted attached segment">
+						  <div class="field">
+						    <label for="email-login">E-mail</label>
+						    <input type="email" name="email-login" placeholder="example@memeland.com.br">
+						  </div>
+						  <div class="field">
+						    <label for="password-login">Senha</label>
+						    <input type="password" name="password-login" placeholder="Informe sua senha">
+						  </div>
+						  <div class="ui error message"></div>
+						</form>
+						<div class="ui two bottom attached buttons">
+						  	<button class="ui facebook  button" id="btn-cadastro">Cadastre-se</button>
+						   	<button class="ui red  button" type="submit">Login</button>
+						  </div>
+					</div>
+					<div class="computer only column"></div>
 				</div>
-				<div class="three wide column"></div>
 			</div>	
 		</div>
 	</div>
@@ -103,6 +110,16 @@
 			  <div class="field">
 			    <label for="email-cadastro">E-mail</label>
 			    <input type="email" name="email-cadastro" placeholder="Informe seu e-mail">
+			  </div>
+			  <div class="two fields">
+	  			<div class="field">
+				  <label for="password-cadastro">Senha</label>
+				  <input type="password" name="password-cadastro" placeholder="Informe uma senha">
+				</div>
+				<div class="field">
+				  <label for="confirm-password">Senha</label>
+				  <input type="password" name="confirm-password" placeholder="Confirmar senha">
+				</div>			  
 			  </div>
 			  <div class="two fields">
 			  	<div class="field">
@@ -157,24 +174,40 @@
 	<div class="ui equal width grid content-margin-top ">
 		<div class="column">
 			<h3 class="header texto-branco">+ Recentes</h3>
-			<div class="ui stackable two column grid">
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/2.gif" class="img-home"></div>
+			<div class="ui two column grid">
+				<div class="column">
+					<a href=""><img src="resources/medias/1.gif" class="img-home"></a>
+					<a><img src="resources/medias/3.gif" class="img-home"></a>
+				</div>
+				<div class="column">
+					<a><img src="resources/medias/2.gif" class="img-home"></a>
+					<a><img src="resources/medias/1.gif" class="img-home"></a>				
+				</div>
 			</div>
 		</div>
-		<div class="column ">
+		<div class="column">
 			<h3 class="header texto-branco">+ Visualizados</h3>
 			<div class="ui stackable two column grid">
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/3.gif" class="img-home"></div>
+				<div class="column">
+					<a><img src="resources/medias/1.gif" class="img-home"></a>
+					<a><img src="resources/medias/2.gif" class="img-home"></a>
+				</div>
+				<div class="column">
+					<a><img src="resources/medias/3.gif" class="img-home"></a>
+					<a><img src="resources/medias/2.gif" class="img-home"></a>
+				
+				</div>
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
 			<h3 class="header texto-branco">Tops</h3>
+			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
+			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
 			
 		</div>
 	</div>	
 	</div>
+	
 
 	<script src="resources/jquery/jquery-3.2.1.min.js"></script>
 	<script src="resources/SemanticUI/semantic.min.js"></script>
