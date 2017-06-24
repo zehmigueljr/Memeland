@@ -20,7 +20,7 @@
 		<a href="ProjetoInt" class="item">
 			Home
 		</a>
-		<a class="item" href="./categorias">
+		<a class="item">
 			Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
@@ -200,8 +200,6 @@
 				  		<i class="send icon"></i>
 				  		Enviar dica
 				  	</button>
-				  
-				  
 			  </form>
 			</div>
 		</div>
@@ -226,34 +224,16 @@
  		</div>
 	</div>
 	<div class="pushable">
-	
+	<h1 class="header">Categorias</h1>
 	<div class="ui equal width grid content-margin-top ">
 		<div class="column">
-			<h3 class="header texto-branco">+ Recentes</h3>
-			<div class="ui two column grid">
-				<div class="column">
-					<a href=""><img src="resources/medias/1.gif" class="img-home"></a>
-					<a><img src="resources/medias/3.gif" class="img-home"></a>
-				</div>
-				<div class="column">
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-					<a><img src="resources/medias/1.gif" class="img-home"></a>				
-				</div>
-			</div>
+			<h3 class="header texto-branco">Imagens/Gifs</h3>
+			
+			
 		</div>
 		<div class="column">
-			<h3 class="header texto-branco">+ Visualizados</h3>
-			<div class="ui stackable two column grid">
-				<div class="column">
-					<a><img src="resources/medias/1.gif" class="img-home"></a>
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-				</div>
-				<div class="column">
-					<a><img src="resources/medias/3.gif" class="img-home"></a>
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-				
-				</div>
-			</div>
+			<h3 class="header texto-branco">Videos/Vines</h3>
+
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
 			<h3 class="header texto-branco">Tops</h3>
