@@ -1,0 +1,37 @@
+html, body, .pushable{
+	background: black !important;
+}
+
+#logo-superior{
+	height:37px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#logo-menu-lateral{
+	margin-top:10px;
+	margin-left: 54px;
+}
+.content-margin-top{	
+	margin: 10px 5px 5px 0 !important; 
+}
+#busca{
+	width: 50%;
+}
+.texto-branco{
+	color: white !important;
+}
+.img-home{
+	heigth:100%;
+	max-width:100%;
+	min-width:100%;
+}
+
+
+@media screen and (max-width: 500px){
+	.mobile-invisivel {
+		display: none !important;	
+	}
+	#busca{
+		width: 55%;
+	}
+}
