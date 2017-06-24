@@ -12,7 +12,7 @@ import br.sc.senai.model.Conteudo;
 import br.sc.senai.service.ConteudoService;
 
 @Controller
-@RequestMapping("/sistema")
+@RequestMapping("/")
 public class SistemaController {
 
 	private final ConteudoService service;
@@ -21,11 +21,17 @@ public class SistemaController {
 		this.service = new ConteudoService();
 	}
 	
-	@RequestMapping(value = "/boasvindas", method = RequestMethod.GET)
-	public ModelAndView boasVindas() throws SQLException {
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public ModelAndView index() throws SQLException {
 		ArrayList<Conteudo> listaConteudo = service.getAllConteudo();
-		ModelAndView modelAndView = new ModelAndView("boasVindas");
+		ModelAndView modelAndView = new ModelAndView("index");
 		modelAndView.addObject("listaConteudos", listaConteudo);
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/categorias", method = RequestMethod.GET)
+	public ModelAndView categorias() throws SQLException {
+		ModelAndView modelAndView = new ModelAndView("categorias");
 		return modelAndView;
 	}
 }
