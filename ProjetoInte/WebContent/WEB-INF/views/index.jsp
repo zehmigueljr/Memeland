@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -158,15 +159,17 @@
 		<div class="column">
 			<h3 class="header texto-branco">+ Recentes</h3>
 			<div class="ui stackable two column grid">
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/2.gif" class="img-home"></div>
+				<c:forEach var="conteudo" items="${listaConteudos}">
+					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
+				</c:forEach>
 			</div>
 		</div>
 		<div class="column ">
 			<h3 class="header texto-branco">+ Visualizados</h3>
 			<div class="ui stackable two column grid">
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/3.gif" class="img-home"></div>
+				<c:forEach var="conteudo" items="${listaConteudos}">
+					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
+				</c:forEach>
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
