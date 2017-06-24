@@ -23,7 +23,7 @@
 		<a class="item">
 			Categorias
 		</a>
-		<a class="item">
+		<a class="item" id="btn-enviar-dica">
 			Enviar dica
 		</a>
 		<a class="item">
@@ -149,10 +149,64 @@
 			    </div>
 			  </div>
 			  <button class="ui red fluid button" type="submit">Cadastrar</button>
-		</form>
+			</form>
 		</div>
+		<div class="ui small modal" id="modal-enviar-dica">
+			<i class="close icon"></i>
+			<div class="header">
+				Envie uma dica!
+			</div>
+			<div class="content">
+				<form class="ui form">
+				  <div class="field">
+				  <label>Categorias</label>
+				  <select class="ui fluid search dropdown" multiple="">
+					  <option value="">Categorias</option>
+					  <option value="1">Animação</option>
+					  <option value="2">Animais</option>
+					  <option value="3">Animes</option>
+					  <option value="4">Arte</option>
+					  <option value="5">Artistas</option>
+					  <option value="6">Blogs e Pessoas</option>
+					  <option value="7">Cartoon</option>
+					  <option value="8">Ciência e Tecnologia</option>
+					  <option value="9">Cinema</option>
+					  <option value="10">Esportes</option>
+					  <option value="11">Entretenimento</option>
+					  <option value="12">Games</option>
+					  <option value="13">Humor</option>
+					  <option value="14">Motores</option>
+					  <option value="15">Música</option>
+					  <option value="16">Notícias</option>
+					  <option value="17">Publicidade</option>
+					  <option value="18">Reações</option>
+					  <option value="19">Viagens e Lugares</option>
+					  <option value="20">Vida e Lazer</option>
+					</select>
+				  </div>
+				  <div class="field">
+				    <label for="url-enviar">Url</label>
+				    <input type="url" name="url-enviar" placeholder="www.URL.com.br/memeloco">
+				  </div>
+				  <div class="field">
+				    <label for="tag-enviar">Tags(Separar tags por Vírgula)</label>
+				    <input type="text" name="tag-enviar" placeholder="trump,dilma,simpsons,gatos">
+				  </div>
+				  <div class="field">
+				  	<input type="file"/>
+				  </div>
+				  	
+				  	<button class="ui red fluid button" type="submit">
+				  		<i class="send icon"></i>
+				  		Enviar dica
+				  	</button>
+				  
+				  
+			  </form>
+			</div>
+		</div>
+		
 	</div>
-	<div class="pushable">
 	<div class="ui fixed inverted menu">
 		<img src="resources/medias/logotipo.png" id="logo-superior">
 		<div class="ui category search item" id="busca">
@@ -171,6 +225,8 @@
 	   		</a>
  		</div>
 	</div>
+	<div class="pushable">
+	
 	<div class="ui equal width grid content-margin-top ">
 		<div class="column">
 			<h3 class="header texto-branco">+ Recentes</h3>

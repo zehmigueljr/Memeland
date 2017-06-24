@@ -7,5 +7,12 @@ $('.btn-login').click(function(){
 $('#btn-cadastro').click(function(){
 	$('#modal-cadastro').modal('show');
 });
+$('#btn-enviar-dica').click(function(){
+	$('#modal-enviar-dica').modal('show');
+});
 
 $('.ui.checkbox').checkbox();
+
+$('.ui.dropdown').dropdown({
+  allowAdditions: true
+});
