@@ -33,7 +33,7 @@
 			Login
 		</a>
 	</div>
-	<div class="ui small inverted modal">
+	<div class="ui small modal" id="modal-login">
 		<i class="close icon"></i>
 		<div class="header">
 			Login
@@ -69,7 +69,7 @@
 				
 				<div class="three wide column"></div>
 				<div class="ten wide column">
-					<form class="ui form inverted segment">
+					<form class="ui form inverted attached segment">
 					  <div class="field">
 					    <label for="email-login">E-mail</label>
 					    <input type="email" name="email-login" placeholder="example@memeland.com.br">
@@ -78,14 +78,62 @@
 					    <label for="password-login">Senha</label>
 					    <input type="password" name="password-login" placeholder="Informe sua senha">
 					  </div>
-					   <div class="ui error message"></div>
-					  <button class="ui red fluid button" type="submit">Login</button>
+					  <div class="ui error message"></div>
 					</form>
+					<div class="ui two bottom attached buttons">
+					  	<button class="ui facebook  button" id="btn-cadastro">Cadastre-se</button>
+					   	<button class="ui red  button" type="submit">Login</button>
+					  </div>
 				</div>
 				<div class="three wide column"></div>
 			</div>	
 		</div>
-		
+	</div>
+	<div class="ui small modal" id="modal-cadastro">
+		<i class="close icon"></i>
+		<div class="header">
+			Cadastro
+		</div>
+		<div class="content">
+			<form class="ui form">
+			  <div class="field">
+			    <label for="nome-completo">Nome completo</label>
+			    <input type="text" name="nome-completo" placeholder="Informe seu nome completo">
+			  </div>
+			  <div class="field">
+			    <label for="email-cadastro">E-mail</label>
+			    <input type="email" name="email-cadastro" placeholder="Informe seu e-mail">
+			  </div>
+			  <div class="two fields">
+			  	<div class="field">
+			    	<label for="data-nascimento">Data de Nascimento</label>
+			    	<input type="date" name="data-nascimento">
+			  	</div>
+				  <div class="grouped fields">
+				    <label>Genero</label>
+				    <div class="field">
+				      <div class="ui radio checkbox">
+				        <input type="radio" name="genero">
+				        <label>Masculino</label>
+				      </div>
+				    </div>
+				    <div class="field">
+				      <div class="ui radio checkbox">
+				        <input type="radio" name="genero">
+				        <label>Feminino</label>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+			  <div class="field">
+			    <div class="ui checkbox">
+			      <input type="checkbox" tabindex="0" class="hidden">
+			      <label>Eu concordo com os termos e condições de uso deste site</label>
+			    </div>
+			  </div>
+			  <button class="ui red fluid button" type="submit">Cadastrar</button>
+		</form>
+		</div>
 	</div>
 	<div class="pushable">
 	<div class="ui fixed inverted menu">
@@ -119,9 +167,6 @@
 			<div class="ui stackable two column grid">
 				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
 				<div class="column"><img src="resources/medias/3.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-				<div class="column"><img src="resources/medias/1.gif" class="img-home"></div>
-
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">

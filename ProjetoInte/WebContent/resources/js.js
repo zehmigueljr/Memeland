@@ -2,5 +2,10 @@ $('#btn-menu').click(function (){
 	$('#menu-lateral').sidebar('toggle');
 });
 $('.btn-login').click(function(){
-	$('.ui.modal').modal('show');
+	$('#modal-login').modal('show');
 });
+$('#btn-cadastro').click(function(){
+	$('#modal-cadastro').modal('show');
+});
+
+$('.ui.radio.checkbox').checkbox();
