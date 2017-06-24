@@ -16,3 +16,4 @@ $('.ui.checkbox').checkbox();
 $('.ui.dropdown').dropdown({
   allowAdditions: true
 });
+

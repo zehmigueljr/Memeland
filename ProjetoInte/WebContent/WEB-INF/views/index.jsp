@@ -227,46 +227,21 @@
  		</div>
 	</div>
 	<div class="pushable">
-	
 	<div class="ui equal width grid content-margin-top ">
 		<div class="column">
 			<h3 class="header texto-branco">+ Recentes</h3>
-<<<<<<< HEAD
-			<div class="ui two column grid">
-				<div class="column">
-					<a href=""><img src="resources/medias/1.gif" class="img-home"></a>
-					<a><img src="resources/medias/3.gif" class="img-home"></a>
-				</div>
-				<div class="column">
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-					<a><img src="resources/medias/1.gif" class="img-home"></a>				
-				</div>
-=======
 			<div class="ui stackable two column grid">
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
 				</c:forEach>
->>>>>>> branch 'master' of https://github.com/zehmigueljr/Memeland.git
 			</div>
 		</div>
 		<div class="column">
 			<h3 class="header texto-branco">+ Visualizados</h3>
 			<div class="ui stackable two column grid">
-<<<<<<< HEAD
-				<div class="column">
-					<a><img src="resources/medias/1.gif" class="img-home"></a>
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-				</div>
-				<div class="column">
-					<a><img src="resources/medias/3.gif" class="img-home"></a>
-					<a><img src="resources/medias/2.gif" class="img-home"></a>
-				
-				</div>
-=======
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
 				</c:forEach>
->>>>>>> branch 'master' of https://github.com/zehmigueljr/Memeland.git
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
