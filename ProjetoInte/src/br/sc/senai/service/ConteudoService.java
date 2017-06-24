@@ -1,6 +1,7 @@
 package br.sc.senai.service;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -40,5 +41,36 @@ public class ConteudoService {
 			listaConteudo.add(conteudo);
 		}
 		return listaConteudo;
+	}
+	
+	public void insertConteudo(Conteudo conteudo) throws SQLException{
+		String sql = null;
+		PreparedStatement stmt = null;
+		if(conteudo.getId() > 0){
+		sql = "insert into conteudo "
+					+ "(nome,url,data_cadastro,data_atualizacao,aprovado,criador,categoria,sub_categoria) "
+					+ "values (?,?,?,?,?,?,?,?)";
+		} else {
+		sql = "update conteudo "
+					+ "set nome= ?,"
+					+ "url= ?,"
+					+ "data_cadastro= ?,"
+					+ "data_atualizacao= ?,"
+					+ "aprovado= ?,"
+					+ "criador= ?,"
+					+ "categoria= ?,"
+					+ "sub_categoria= ? "
+					+ "where id =" + conteudo.getId();
+		}
+		stmt = conn.prepareStatement(sql);
+		stmt.setString(1, conteudo.getNome());
+		stmt.setString(2, conteudo.getUrl());
+		stmt.setDate(3, conteudo.getDataCadastro());
+		stmt.setDate(4, conteudo.getDataAtualizacao());
+		stmt.setBoolean(5, conteudo.getAprovado());
+		stmt.setInt(6, conteudo.getCriador());
+		stmt.setInt(7, conteudo.getCategoria());
+		stmt.setInt(8, conteudo.getSubCategoria());
+		stmt.execute();
 	}
 }

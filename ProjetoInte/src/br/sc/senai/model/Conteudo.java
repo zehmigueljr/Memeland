@@ -1,6 +1,6 @@
 package br.sc.senai.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Conteudo {
 	
