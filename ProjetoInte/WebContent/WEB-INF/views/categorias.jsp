@@ -17,7 +17,7 @@
 	<div class="ui sidebar inverted vertical right menu" id="menu-lateral">
 		<img src="resources/medias/logotipo.png" id="logo-menu-lateral">
 		<div class="ui divider"></div>
-		<a href="ProjetoInt" class="item">
+		<a href="/ProjetoInte" class="item">
 			Home
 		</a>
 		<a class="item">
@@ -206,10 +206,10 @@
 		
 	</div>
 	<div class="ui fixed inverted menu">
-		<img src="resources/medias/logotipo.png" id="logo-superior">
+		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
      			<div class="ui icon input">
-       			<input class="prompt" type="text" placeholder="Você disse memes?">
+       			<input class="prompt" type="text" placeholder="Busca memes...">
        			<i class="search link icon"></i>
     			</div>
     			<div class="results"></div>
@@ -223,26 +223,66 @@
 	   		</a>
  		</div>
 	</div>
-	<div class="pushable">
-	<h1 class="header">Categorias</h1>
-	<div class="ui equal width grid content-margin-top ">
-		<div class="column">
-			<h3 class="header texto-branco">Imagens/Gifs</h3>
-			<h2 class=""></h2>
-			
-			
-		</div>
-		<div class="column">
-			<h3 class="header texto-branco">Videos/Vines</h3>
-
-		</div>
-		<div class="two wide column mobile-invisivel center aligned">
-			<h3 class="header texto-branco">Tops</h3>
-			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
-			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
-			
-		</div>
-	</div>	
+	<div class="pushable content-margin-top">
+		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
+		<div class="ui equal width grid content-margin-lateral ">
+			<div class="column">
+				<a><h3 class="header texto-branco">Imagens/Gifs</h3></a>
+				<div class="ui link list inverted lista-categorias">
+				  <a class="item">Animação</a>
+				  <a class="item">Animais</a>
+				  <a class="item">Animes</a>
+				  <a class="item">Arte</a>
+				  <a class="item">Artistas</a>
+				  <a class="item">Blogs e Pessoas</a>
+				  <a class="item">Cartoon</a>
+				  <a class="item">Ciência e Tecnologia</a>
+				  <a class="item">Cinema</a>
+				  <a class="item">Esportes</a>
+				  <a class="item">Entretenimento</a>
+				  <a class="item">Games</a>
+				  <a class="item">Humor</a>
+				  <a class="item">Motores</a>
+				  <a class="item">Música</a>
+				  <a class="item">Notícias</a>
+				  <a class="item">Publicidade</a>
+				  <a class="item">Reações</a>
+				  <a class="item">Viagens e Lugares</a>
+				  <a class="item">Vida e Laze</a>
+				</div>				
+			</div>
+			<div class="column">
+				<a><h3 class="header texto-branco">Videos/Vines</h3></a>
+				<div class="ui link list inverted lista-categorias">
+				  <a class="item">Animação</a>
+				  <a class="item">Animais</a>
+				  <a class="item">Animes</a>
+				  <a class="item">Arte</a>
+				  <a class="item">Artistas</a>
+				  <a class="item">Blogs e Pessoas</a>
+				  <a class="item">Cartoon</a>
+				  <a class="item">Ciência e Tecnologia</a>
+				  <a class="item">Cinema</a>
+				  <a class="item">Esportes</a>
+				  <a class="item">Entretenimento</a>
+				  <a class="item">Games</a>
+				  <a class="item">Humor</a>
+				  <a class="item">Motores</a>
+				  <a class="item">Música</a>
+				  <a class="item">Notícias</a>
+				  <a class="item">Publicidade</a>
+				  <a class="item">Reações</a>
+				  <a class="item">Viagens e Lugares</a>
+				  <a class="item">Vida e Laze</a>
+				</div>
+			</div>
+			<div class="two wide column mobile-invisivel center aligned">
+				<h3 class="header texto-branco">Tops</h3>
+				<a><img src="resources/medias/joker.jpg" class="img-home"></a>
+				<a><img src="resources/medias/ze.jpg" class="img-home"></a>
+				
+			</div>
+		</div>	
 	</div>
 	
 

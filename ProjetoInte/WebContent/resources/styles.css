@@ -1,7 +1,9 @@
-html, body, .pushable{
+html, body, .pushable, .pusher{
 	background: black !important;
 }
-
+body{
+	overflow:hidden;
+}
 #logo-superior{
 	height:37px;
 	margin-top: 5px;
@@ -11,8 +13,15 @@ html, body, .pushable{
 	margin-top:10px;
 	margin-left: 54px;
 }
-.content-margin-top{	
-	margin: 50px 5px 5px 0 !important; 
+.content-margin-top{
+	margin-top: 60px; 
+	overflow: scroll;
+}
+.margin-esquerda{
+	margin-left: 10px;
+}
+.content-margin-lateral{	
+	margin: 0 5px 5px 0 !important; 
 }
 #busca{
 	width: 50%;
@@ -26,7 +35,15 @@ html, body, .pushable{
 	min-width:100%;
 	margin-bottom:5px;
 }
-
+#login-admin{
+	height:100%;
+}
+#login-corpo{
+	max-width:400px;
+}
+.lista-categorias{
+	font-size: 1.3em !important;
+}
 
 @media screen and (max-width: 500px){
 	.mobile-invisivel {

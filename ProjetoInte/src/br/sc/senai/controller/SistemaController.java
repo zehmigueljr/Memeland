@@ -34,4 +34,10 @@ public class SistemaController {
 		ModelAndView modelAndView = new ModelAndView("categorias");
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	public ModelAndView admin() throws SQLException {
+		ModelAndView modelAndView = new ModelAndView("admin");
+		return modelAndView;
+	}
 }

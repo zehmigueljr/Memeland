@@ -18,7 +18,7 @@
 	<div class="ui sidebar inverted vertical right menu" id="menu-lateral">
 		<img src="resources/medias/logotipo.png" id="logo-menu-lateral">
 		<div class="ui divider"></div>
-		<a href="ProjetoInt" class="item">
+		<a href="/ProjetoInte" class="item">
 			Home
 		</a>
 		<a class="item" href="./categorias">
@@ -201,18 +201,16 @@
 				  		<i class="send icon"></i>
 				  		Enviar dica
 				  	</button>
-				  
-				  
 			  </form>
 			</div>
 		</div>
 		
 	</div>
 	<div class="ui fixed inverted menu">
-		<img src="resources/medias/logotipo.png" id="logo-superior">
+		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
      			<div class="ui icon input">
-       			<input class="prompt" type="text" placeholder="Você disse memes?">
+       			<input class="prompt" type="text" placeholder="Busca memes...">
        			<i class="search link icon"></i>
     			</div>
     			<div class="results"></div>
@@ -226,8 +224,8 @@
 	   		</a>
  		</div>
 	</div>
-	<div class="pushable">
-	<div class="ui equal width grid content-margin-top ">
+	<div class="pushable content-margin-top">
+	<div class="ui equal width grid content-margin-lateral ">
 		<div class="column">
 			<h3 class="header texto-branco">+ Recentes</h3>
 			<div class="ui stackable two column grid">
