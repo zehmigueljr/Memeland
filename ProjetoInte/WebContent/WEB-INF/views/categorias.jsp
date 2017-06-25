@@ -20,7 +20,7 @@
 		<a href="/ProjetoInte" class="item">
 			Home
 		</a>
-		<a class="item">
+		<a class="item" href="./categorias">
 			Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
@@ -226,7 +226,7 @@
 		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="column">
-				<a><h3 class="header texto-branco">Imagens/Gifs</h3></a>
+				<a href="./catimg"><h3 class="header texto-branco">Imagens/Gifs</h3></a>
 				<div class="ui link list inverted lista-categorias">
 				  <a class="item">Animação</a>
 				  <a class="item">Animais</a>
@@ -251,7 +251,7 @@
 				</div>				
 			</div>
 			<div class="column">
-				<a><h3 class="header texto-branco">Videos/Vines</h3></a>
+				<a href="./catvideo"><h3 class="header texto-branco">Videos/Vines</h3></a>
 				<div class="ui link list inverted lista-categorias">
 				  <a class="item">Animação</a>
 				  <a class="item">Animais</a>

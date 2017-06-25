@@ -250,18 +250,8 @@
 				  <a class="item">Vida e Laze</a>
 				</div>				
 			</div>
-			<div class="column" id="teste-flex">
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/3.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				
+			<div class="column">
+
 			</div>
 			<div class="two wide column mobile-invisivel center aligned">
 				<h3 class="header texto-branco">Tops</h3>

@@ -288,6 +288,21 @@
 					    <label>Tags</label>
 					    <input type="text" name="tags-meme" placeholder="Tags">
 					  </div>
+					  <div class="grouped fields">
+					    <label>Tipo</label>
+					    <div class="field">
+					      <div class="ui radio checkbox">
+					        <input type="radio" name="tipo">
+					        <label>Imagem/gifs</label>
+					      </div>
+					    </div>
+					    <div class="field">
+					      <div class="ui radio checkbox">
+					        <input type="radio" name="tipo">
+					        <label>Videos/vines</label>
+					      </div>
+					    </div>
+					  </div>
 					</form>
 				</div>
 				<div class="ui two bottom attached buttons">

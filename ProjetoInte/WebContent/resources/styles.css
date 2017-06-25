@@ -3,6 +3,7 @@ html, body, .pushable, .pusher{
 }
 body{
 	overflow:hidden;
+	padding-bottom:40px !important;
 }
 #logo-superior{
 	height:37px;
@@ -52,18 +53,6 @@ body{
 	padding-bottom:15px;
 }
 
-#teste-flex{
-	display:flex;
-	flex-wrap: wrap;
-}
-.teste{
-	flex-grow:0;
-	flex-shrink:1;
-	flex-basis:250px;
-	margin:5px;
-	width:20%;
-	
-}
 
 @media screen and (max-width: 500px){
 	.mobile-invisivel {
