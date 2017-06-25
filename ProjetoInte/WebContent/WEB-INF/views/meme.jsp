@@ -151,8 +151,7 @@
 			  <button class="ui red fluid button" type="submit">Cadastrar</button>
 			</form>
 		</div>
-	</div>
-	<div class="ui small modal" id="modal-enviar-dica">
+		<div class="ui small modal" id="modal-enviar-dica">
 			<i class="close icon"></i>
 			<div class="header">
 				Envie uma dica!
@@ -204,6 +203,25 @@
 			  </form>
 			</div>
 		</div>
+	</div>
+	<div class="ui small modal" id="motivo-reprovacao">
+		<i class="close icon"></i>
+		<div class="header">
+			Motivo da reprovação meme
+		</div>
+		<div class="content">
+			<div class="ui form">
+			  <div class="field">
+			    <label>Este motivo será enviado ao e-mail do Autor</label>
+			    <textarea rows="2"></textarea>
+			  </div>
+			  <div class="actions">
+			    <div class="ui positive right floated button"><i class="thumbs down icon"></i>Reprovar</div>
+			    <div class="ui negative right floated button"><i class="remove icon"></i>Cancelar</div>
+			  </div>
+			</div>
+		</div>
+	</div>
 	<div class="ui fixed inverted menu">
 		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
@@ -223,50 +241,12 @@
  		</div>
 	</div>
 	<div class="pushable content-margin-top">
-		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
 		<div class="ui equal width grid content-margin-lateral ">
-			<div class="three wide column">
-				<a><h3 class="header texto-branco">Imagens/Gifs</h3></a>
-				<div class="ui link list inverted lista-categorias">
-				  <a class="item">Animação</a>
-				  <a class="item">Animais</a>
-				  <a class="item">Animes</a>
-				  <a class="item">Arte</a>
-				  <a class="item">Artistas</a>
-				  <a class="item">Blogs e Pessoas</a>
-				  <a class="item">Cartoon</a>
-				  <a class="item">Ciência e Tecnologia</a>
-				  <a class="item">Cinema</a>
-				  <a class="item">Esportes</a>
-				  <a class="item">Entretenimento</a>
-				  <a class="item">Games</a>
-				  <a class="item">Humor</a>
-				  <a class="item">Motores</a>
-				  <a class="item">Música</a>
-				  <a class="item">Notícias</a>
-				  <a class="item">Publicidade</a>
-				  <a class="item">Reações</a>
-				  <a class="item">Viagens e Lugares</a>
-				  <a class="item">Vida e Laze</a>
-				</div>				
+			<div class="column">
+				<img src="resources/medias/1.gif" class="img-home">	
+					
 			</div>
-			<div class="column" id="teste-flex">
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/3.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				<img src="resources/medias/1.gif" class="teste" >
-				
-			</div>
-			<div class="two wide column mobile-invisivel center aligned">
-				<h3 class="header texto-branco">Tops</h3>
-				<a><img src="resources/medias/joker.jpg" class="img-home"></a>
-				<a><img src="resources/medias/ze.jpg" class="img-home"></a>
+			<div class="eight wide computer sixtenn wide mobile column">
 				
 			</div>
 		</div>	
