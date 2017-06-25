@@ -102,53 +102,47 @@
 		<div class="header">
 			Cadastro
 		</div>
-		<div class="content">
-			<form class="ui form">
+		<div class="content" >
+			<form class="ui form" id="form-cadastro">
 			  <div class="field">
 			    <label for="nome-completo">Nome completo</label>
-			    <input type="text" name="nome-completo" placeholder="Informe seu nome completo">
-			  </div>
-			  <div class="field">
-			    <label for="email-cadastro">E-mail</label>
-			    <input type="email" name="email-cadastro" placeholder="Informe seu e-mail">
-			  </div>
-			  <div class="two fields">
-	  			<div class="field">
-				  <label for="password-cadastro">Senha</label>
-				  <input type="password" name="password-cadastro" placeholder="Informe uma senha">
-				</div>
-				<div class="field">
-				  <label for="confirm-password">Confirmar Senha</label>
-				  <input type="password" name="confirm-password" placeholder="Confirmar senha">
-				</div>			  
+			    <input type="text" name="nome-completo" data-validate="nomecompleto" placeholder="Informe seu nome completo">
 			  </div>
 			  <div class="two fields">
 			  	<div class="field">
 			    	<label for="data-nascimento">Data de Nascimento</label>
-			    	<input type="date" name="data-nascimento">
+			    	<input type="date" name="data-nascimento" data-validate="datanascimento">
 			  	</div>
-				  <div class="grouped fields">
-				    <label>Genero</label>
-				    <div class="field">
-				      <div class="ui radio checkbox">
-				        <input type="radio" name="genero">
-				        <label>Masculino</label>
-				      </div>
-				    </div>
-				    <div class="field">
-				      <div class="ui radio checkbox">
-				        <input type="radio" name="genero">
-				        <label>Feminino</label>
-				      </div>
-				    </div>
+				  <div class="field">
+				  	<label>Genero</label>
+				    <select class="ui dropdown" data-validate="generocadastro">
+					  <option value="">Genero</option>
+					  <option value="1">Masculino</option>
+					  <option value="0">Feminino</option>
+					</select>
 				  </div>
 			  </div>
 			  <div class="field">
-			    <div class="ui checkbox">
-			      <input type="checkbox" tabindex="0" class="hidden">
+			    <label for="email-cadastro">E-mail</label>
+			    <input type="email" name="email-cadastro" data-validate="emailcadastro" placeholder="Informe seu e-mail">
+			  </div>
+			  <div class="two fields">
+	  			<div class="field">
+				  <label for="password-cadastro">Senha</label>
+				  <input type="password" name="password-cadastro"  data-validate="passwords" placeholder="Informe uma senha">
+				</div>
+				<div class="field">
+				  <label for="confirm-password">Confirmar Senha</label>
+				  <input type="password" name="confirm-password" data-validate="confirmpassword" placeholder="Confirmar senha">
+				</div>			  
+			  </div>
+			  <div class="field">
+			    <div class="ui checkbox" data-validate="termosuso">
+			      <input type="checkbox" tabindex="0" class="hidden" data-validate="termosuso">
 			      <label>Eu concordo com os termos e condições de uso deste site</label>
 			    </div>
 			  </div>
+			  <div class="ui error message"></div>
 			  <button class="ui red fluid button" type="submit">Cadastrar</button>
 			</form>
 		</div>
@@ -162,7 +156,7 @@
 				<form class="ui form">
 				  <div class="field">
 				  <label>Categorias</label>
-				  <select class="ui fluid search dropdown" multiple="">
+				  <select class="ui fluid dropdown" >
 					  <option value="">Categorias</option>
 					  <option value="1">Animação</option>
 					  <option value="2">Animais</option>

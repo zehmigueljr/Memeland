@@ -223,10 +223,9 @@
  		</div>
 	</div>
 	<div class="pushable content-margin-top">
-		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
+		<h2 class="header texto-branco margin-esquerda">Videos/Vines</h2>
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="three wide column">
-				<a><h3 class="header texto-branco">Videos/Vines</h3></a>
 				<div class="ui link list inverted lista-categorias">
 				  <a class="item">Animação</a>
 				  <a class="item">Animais</a>
