@@ -117,7 +117,7 @@
 				  <input type="password" name="password-cadastro" placeholder="Informe uma senha">
 				</div>
 				<div class="field">
-				  <label for="confirm-password">Senha</label>
+				  <label for="confirm-password">Confirmar Senha</label>
 				  <input type="password" name="confirm-password" placeholder="Confirmar senha">
 				</div>			  
 			  </div>
