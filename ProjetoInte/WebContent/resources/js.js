@@ -10,6 +10,9 @@ $('#btn-cadastro').click(function(){
 $('#btn-enviar-dica').click(function(){
 	$('#modal-enviar-dica').modal('show');
 });
+$('#btn-reprovar-meme').click(function(){
+	$('#motivo-reprovacao').modal('show');
+});
 
 $('.ui.checkbox').checkbox();
 

@@ -34,10 +34,26 @@ public class SistemaController {
 		ModelAndView modelAndView = new ModelAndView("categorias");
 		return modelAndView;
 	}
+	@RequestMapping(value = "/catimg", method = RequestMethod.GET)
+	public ModelAndView catimg() throws SQLException {
+		ModelAndView modelAndView = new ModelAndView("catimg");
+		return modelAndView;
+	}
+	@RequestMapping(value = "/catvideo", method = RequestMethod.GET)
+	public ModelAndView catvideo() throws SQLException {
+		ModelAndView modelAndView = new ModelAndView("catvideo");
+		return modelAndView;
+	}
 	
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public ModelAndView admin() throws SQLException {
 		ModelAndView modelAndView = new ModelAndView("admin");
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/aprovaadmin", method = RequestMethod.GET)
+	public ModelAndView aprovaadmin() throws SQLException {
+		ModelAndView modelAndView = new ModelAndView("aprovaadmin");
 		return modelAndView;
 	}
 }

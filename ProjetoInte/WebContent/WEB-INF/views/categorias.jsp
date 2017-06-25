@@ -151,7 +151,8 @@
 			  <button class="ui red fluid button" type="submit">Cadastrar</button>
 			</form>
 		</div>
-		<div class="ui small modal" id="modal-enviar-dica">
+	</div>
+	<div class="ui small modal" id="modal-enviar-dica">
 			<i class="close icon"></i>
 			<div class="header">
 				Envie uma dica!
@@ -159,8 +160,8 @@
 			<div class="content">
 				<form class="ui form">
 				  <div class="field">
-				  <label>Categorias</label>
-				  <select class="ui fluid search dropdown" multiple="">
+				  	<label>Categorias</label>
+				 	 <select class="ui fluid search dropdown" multiple="">
 					  <option value="">Categorias</option>
 					  <option value="1">Animação</option>
 					  <option value="2">Animais</option>
@@ -203,8 +204,6 @@
 			  </form>
 			</div>
 		</div>
-		
-	</div>
 	<div class="ui fixed inverted menu">
 		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">

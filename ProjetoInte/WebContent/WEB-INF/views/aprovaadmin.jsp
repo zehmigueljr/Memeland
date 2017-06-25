@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -21,7 +20,7 @@
 		<a href="/ProjetoInte" class="item">
 			Home
 		</a>
-		<a class="item" href="./categorias">
+		<a class="item">
 			Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
@@ -152,8 +151,7 @@
 			  <button class="ui red fluid button" type="submit">Cadastrar</button>
 			</form>
 		</div>
-	</div>
-	<div class="ui small modal" id="modal-enviar-dica">
+		<div class="ui small modal" id="modal-enviar-dica">
 			<i class="close icon"></i>
 			<div class="header">
 				Envie uma dica!
@@ -205,6 +203,25 @@
 			  </form>
 			</div>
 		</div>
+	</div>
+	<div class="ui small modal" id="motivo-reprovacao">
+		<i class="close icon"></i>
+		<div class="header">
+			Motivo da reprovação meme
+		</div>
+		<div class="content">
+			<div class="ui form">
+			  <div class="field">
+			    <label>Este motivo será enviado ao e-mail do Autor</label>
+			    <textarea rows="2"></textarea>
+			  </div>
+			  <div class="actions">
+			    <div class="ui positive right floated button"><i class="thumbs down icon"></i>Reprovar</div>
+			    <div class="ui negative right floated button"><i class="remove icon"></i>Cancelar</div>
+			  </div>
+			</div>
+		</div>
+	</div>
 	<div class="ui fixed inverted menu">
 		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
@@ -224,30 +241,67 @@
  		</div>
 	</div>
 	<div class="pushable content-margin-top">
-	<div class="ui equal width grid content-margin-lateral ">
-		<div class="column">
-			<h3 class="header texto-branco">+ Recentes</h3>
-			<div class="ui stackable two column grid">
-				<c:forEach var="conteudo" items="${listaConteudos}">
-					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
-				</c:forEach>
+		<div class="ui equal width grid content-margin-lateral ">
+			<div class="column">
+				<h2 class="header texto-branco">Aprovador de memes</h2>
+				<img src="resources/medias/1.gif" class="img-home">		
 			</div>
-		</div>
-		<div class="column">
-			<h3 class="header texto-branco">+ Visualizados</h3>
-			<div class="ui stackable two column grid">
-				<c:forEach var="conteudo" items="${listaConteudos}">
-					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
-				</c:forEach>
+			<div class="five wide computer sixtenn wide mobile column">
+				<h3 class="header texto-branco">Info. meme</h3>
+				<div class="ui red top attached segment" id="aprovar-meme">
+					<form class="ui form">
+					  <div class="field">
+					    <label>Autor</label>
+					    <input type="text" disabled name="autor-meme" value="Nome do Autor">
+					  </div>
+					  <div class="field">
+					    <label>E-mail Autor</label>
+					    <input type="email" disabled name="email-autor-meme" value="E-mail autor meme">
+					  </div>
+					  <div class="field">
+				  		<label>Categorias</label>
+					 	 <select class="ui fluid search dropdown" multiple="">
+						  <option value="">Categorias</option>
+						  <option value="1">Animação</option>
+						  <option value="2">Animais</option>
+						  <option value="3">Animes</option>
+						  <option value="4">Arte</option>
+						  <option value="5">Artistas</option>
+						  <option value="6">Blogs e Pessoas</option>
+						  <option value="7">Cartoon</option>
+						  <option value="8">Ciência e Tecnologia</option>
+						  <option value="9">Cinema</option>
+						  <option value="10">Esportes</option>
+						  <option value="11">Entretenimento</option>
+						  <option value="12">Games</option>
+						  <option value="13">Humor</option>
+						  <option value="14">Motores</option>
+						  <option value="15">Música</option>
+						  <option value="16">Notícias</option>
+						  <option value="17">Publicidade</option>
+						  <option value="18">Reações</option>
+						  <option value="19">Viagens e Lugares</option>
+						  <option value="20">Vida e Lazer</option>
+						</select>
+				  	</div>
+					  <div class="field">
+					    <label>Tags</label>
+					    <input type="text" name="tags-meme" placeholder="Tags">
+					  </div>
+					</form>
+				</div>
+				<div class="ui two bottom attached buttons">
+				    <div class="ui negative button" id="btn-reprovar-meme"><i class="thumbs down icon"></i>Reprovar</div>
+				    <div class="ui positive button" id="btn-aprovar-meme"><i class="thumbs up icon"></i>Aprovar</div>
+				</div>
 			</div>
-		</div>
-		<div class="two wide column mobile-invisivel center aligned">
-			<h3 class="header texto-branco">Tops</h3>
-			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
-			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
-			
-		</div>
-	</div>	
+			<div class="two wide column mobile-invisivel center aligned">
+				<h3 class="header texto-branco">Tops</h3>
+				<a><img src="resources/medias/joker.jpg" class="img-home"></a>
+				<a><img src="resources/medias/ze.jpg" class="img-home"></a>
+				
+			</div>
+		</div>	
 	</div>
 	
 

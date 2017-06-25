@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -21,7 +20,7 @@
 		<a href="/ProjetoInte" class="item">
 			Home
 		</a>
-		<a class="item" href="./categorias">
+		<a class="item">
 			Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
@@ -224,30 +223,43 @@
  		</div>
 	</div>
 	<div class="pushable content-margin-top">
-	<div class="ui equal width grid content-margin-lateral ">
-		<div class="column">
-			<h3 class="header texto-branco">+ Recentes</h3>
-			<div class="ui stackable two column grid">
-				<c:forEach var="conteudo" items="${listaConteudos}">
-					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
-				</c:forEach>
+		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
+		<div class="ui equal width grid content-margin-lateral ">
+			<div class="three wide column">
+				<a><h3 class="header texto-branco">Imagens/Gifs</h3></a>
+				<div class="ui link list inverted lista-categorias">
+				  <a class="item">Animação</a>
+				  <a class="item">Animais</a>
+				  <a class="item">Animes</a>
+				  <a class="item">Arte</a>
+				  <a class="item">Artistas</a>
+				  <a class="item">Blogs e Pessoas</a>
+				  <a class="item">Cartoon</a>
+				  <a class="item">Ciência e Tecnologia</a>
+				  <a class="item">Cinema</a>
+				  <a class="item">Esportes</a>
+				  <a class="item">Entretenimento</a>
+				  <a class="item">Games</a>
+				  <a class="item">Humor</a>
+				  <a class="item">Motores</a>
+				  <a class="item">Música</a>
+				  <a class="item">Notícias</a>
+				  <a class="item">Publicidade</a>
+				  <a class="item">Reações</a>
+				  <a class="item">Viagens e Lugares</a>
+				  <a class="item">Vida e Laze</a>
+				</div>				
 			</div>
-		</div>
-		<div class="column">
-			<h3 class="header texto-branco">+ Visualizados</h3>
-			<div class="ui stackable two column grid">
-				<c:forEach var="conteudo" items="${listaConteudos}">
-					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
-				</c:forEach>
+			<div class="column">
+				
 			</div>
-		</div>
-		<div class="two wide column mobile-invisivel center aligned">
-			<h3 class="header texto-branco">Tops</h3>
-			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
-			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
-			
-		</div>
-	</div>	
+			<div class="two wide column mobile-invisivel center aligned">
+				<h3 class="header texto-branco">Tops</h3>
+				<a><img src="resources/medias/joker.jpg" class="img-home"></a>
+				<a><img src="resources/medias/ze.jpg" class="img-home"></a>
+				
+			</div>
+		</div>	
 	</div>
 	
 
