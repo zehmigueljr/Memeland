@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" type="text/css" href="resources/SemanticUI/semantic.min.css" />
-    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/SemanticUI/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/styles.css" />
 	<title>
         MemeLand
     </title>
 </head>
 <body>		
 	<div class="ui sidebar inverted vertical right menu" id="menu-lateral">
-		<img src="resources/medias/logotipo.png" id="logo-menu-lateral">
+		<img src="../resources/medias/logotipo.png" id="logo-menu-lateral">
 		<div class="ui divider"></div>
 		<a href="/ProjetoInte" class="item">
 			Home
@@ -223,7 +223,7 @@
 		</div>
 	</div>
 	<div class="ui fixed inverted menu">
-		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
+		<a href="/ProjetoInte"><img src="../resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
      			<div class="ui icon input">
        			<input class="prompt" type="text" placeholder="Busca memes...">
@@ -243,7 +243,7 @@
 	<div class="pushable content-margin-top">
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="column">
-				<img src="resources/medias/1.gif" class="img-home">	
+				<img src="../${meme.url}" class="img-home">	
 					
 			</div>
 			<div class="eight wide computer sixtenn wide mobile column">
@@ -253,8 +253,8 @@
 	</div>
 	
 
-	<script src="resources/jquery/jquery-3.2.1.min.js"></script>
-	<script src="resources/SemanticUI/semantic.min.js"></script>
-	<script src="resources/js.js"></script>
+	<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../resources/SemanticUI/semantic.min.js"></script>
+	<script src="../resources/js.js"></script>
 </body>
 </html>

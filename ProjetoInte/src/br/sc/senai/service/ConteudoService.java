@@ -37,6 +37,8 @@ public class ConteudoService {
 			conteudo.setNome(rs.getString("nome"));
 			conteudo.setSubCategoria(rs.getInt("sub_categoria"));
 			conteudo.setUrl(rs.getString("url"));
+			conteudo.setTags(rs.getString("tags"));
+			conteudo.setViews(rs.getInt("views"));
 			
 			listaConteudo.add(conteudo);
 		}
@@ -49,7 +51,7 @@ public class ConteudoService {
 		if(conteudo.getId() > 0){
 		sql = "insert into conteudo "
 					+ "(nome,url,data_cadastro,data_atualizacao,aprovado,criador,categoria,sub_categoria) "
-					+ "values (?,?,?,?,?,?,?,?)";
+					+ "values (?,?,?,?,?,?,?,?,?,?)";
 		} else {
 		sql = "update conteudo "
 					+ "set nome= ?,"
@@ -71,6 +73,29 @@ public class ConteudoService {
 		stmt.setInt(6, conteudo.getCriador());
 		stmt.setInt(7, conteudo.getCategoria());
 		stmt.setInt(8, conteudo.getSubCategoria());
+		stmt.setString(9,conteudo.getTags());
+		stmt.setInt(10, conteudo.getViews());
 		stmt.execute();
+	}
+	
+	public Conteudo getConteudo(int id) throws SQLException {
+		Statement stmt = conn.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from conteudo where aprovado = 1 and id ="+id);
+		
+		Conteudo conteudo = new Conteudo();
+		while(rs.next()){	
+			conteudo.setAprovado(rs.getBoolean("aprovado"));
+			conteudo.setCategoria(rs.getInt("categoria"));
+			conteudo.setCriador(rs.getInt("criador"));
+			conteudo.setDataAtualizacao(rs.getDate("data_atualizacao"));
+			conteudo.setDataCadastro(rs.getDate("data_cadastro"));
+			conteudo.setId(rs.getInt("id"));
+			conteudo.setNome(rs.getString("nome"));
+			conteudo.setSubCategoria(rs.getInt("sub_categoria"));
+			conteudo.setUrl(rs.getString("url"));
+			conteudo.setTags(rs.getString("tags"));
+			conteudo.setViews(rs.getInt("views"));
+		}	
+		return conteudo;
 	}
 }

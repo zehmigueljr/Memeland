@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -54,6 +55,14 @@ public class SistemaController {
 	@RequestMapping(value = "/aprovaadmin", method = RequestMethod.GET)
 	public ModelAndView aprovaadmin() throws SQLException {
 		ModelAndView modelAndView = new ModelAndView("aprovaadmin");
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/media/{id}", method = RequestMethod.GET)
+	public ModelAndView meme(@PathVariable int id) throws SQLException {
+		Conteudo meme = service.getConteudo(id);
+		ModelAndView modelAndView = new ModelAndView("meme");
+		modelAndView.addObject("meme", meme);
 		return modelAndView;
 	}
 }

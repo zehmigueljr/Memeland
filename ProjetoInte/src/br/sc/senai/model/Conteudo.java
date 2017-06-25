@@ -13,7 +13,21 @@ public class Conteudo {
 	private int criador;
 	private int categoria;
 	private int subCategoria;
+	private String tags;
+	private int views;
 	
+	public String getTags() {
+		return tags;
+	}
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+	public int getViews() {
+		return views;
+	}
+	public void setViews(int views) {
+		this.views = views;
+	}
 	public int getId() {
 		return id;
 	}
