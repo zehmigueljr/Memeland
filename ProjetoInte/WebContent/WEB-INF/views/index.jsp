@@ -232,7 +232,7 @@
 					<div class="column"><img src="${conteudo.url}" class="img-home"></div>
 				</c:forEach>
 			</div>
-		</div>
+		</div>		
 		<div class="column">
 			<h3 class="header texto-branco">+ Visualizados</h3>
 			<div class="ui stackable two column grid">
