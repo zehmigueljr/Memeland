@@ -3,7 +3,7 @@ html, body, .pushable, .pusher{
 }
 body{
 	overflow:hidden;
-	padding-bottom:40px !important;
+
 }
 #logo-superior{
 	height:37px;
@@ -17,6 +17,8 @@ body{
 .content-margin-top{
 	margin-top: 60px; 
 	overflow: scroll;
+	padding-bottom: 40px !important; 
+	
 }
 .margin-esquerda{
 	margin-left: 10px;
@@ -52,7 +54,6 @@ body{
 #motivo-reprovacao{
 	padding-bottom:15px;
 }
-
 
 @media screen and (max-width: 500px){
 	.mobile-invisivel {

@@ -117,7 +117,7 @@
 				  <input type="password" name="password-cadastro" placeholder="Informe uma senha">
 				</div>
 				<div class="field">
-				  <label for="confirm-password">Senha</label>
+				  <label for="confirm-password">Confirmar Senha</label>
 				  <input type="password" name="confirm-password" placeholder="Confirmar senha">
 				</div>			  
 			  </div>
@@ -223,10 +223,9 @@
  		</div>
 	</div>
 	<div class="pushable content-margin-top">
-		<h2 class="header texto-branco margin-esquerda">Categorias</h2>
+		<h2 class="header texto-branco margin-esquerda">Imagens/Gifs</h2>
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="three wide column">
-				<a><h3 class="header texto-branco">Imagens/Gifs</h3></a>
 				<div class="ui link list inverted lista-categorias">
 				  <a class="item">Animação</a>
 				  <a class="item">Animais</a>
