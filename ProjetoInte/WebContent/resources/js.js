@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $('#btn-menu').click(function (){
 	$('#menu-lateral').sidebar('toggle');
 });
@@ -20,3 +21,37 @@ $('.ui.dropdown').dropdown({
   allowAdditions: true
 });
 
+$('#enviar-dica').click(function(){
+	var data = {};
+		data["id"] = 0;
+		data["nome"] = '';
+		data["url"] = '';
+		data["dataCadastro"] = '';
+		data["dataAtualizacao"] = '';
+		data["aprovado"] = 0;
+		data["criador"] = 0;
+		data["categoria"] = 1;
+		data["subCategoria"] = 1;
+		data["tags"] = $('tag').val();
+		data["views"] = 0
+		console.log(data);
+		console.log(JSON.stringify(data));
+
+	
+	$.ajax({ 
+	    url: "enviardica", 
+	    headers: { 
+	        'Accept': 'application/json',
+	        'Content-Type': 'application/json' 
+	    },
+	    type:"POST",
+	    data: JSON.stringify(data),
+	    dataType: "json",
+	    async: false,
+	    cache: false,        
+	    processData:false,
+	    success: function(data){
+	    }
+	});
+});
+});

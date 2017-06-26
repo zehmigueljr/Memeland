@@ -163,46 +163,28 @@
 				  <div class="field">
 				  <label>Categorias</label>
 				  <select class="ui fluid search dropdown" multiple="">
-					  <option value="">Categorias</option>
-					  <option value="1">Animação</option>
-					  <option value="2">Animais</option>
-					  <option value="3">Animes</option>
-					  <option value="4">Arte</option>
-					  <option value="5">Artistas</option>
-					  <option value="6">Blogs e Pessoas</option>
-					  <option value="7">Cartoon</option>
-					  <option value="8">Ciência e Tecnologia</option>
-					  <option value="9">Cinema</option>
-					  <option value="10">Esportes</option>
-					  <option value="11">Entretenimento</option>
-					  <option value="12">Games</option>
-					  <option value="13">Humor</option>
-					  <option value="14">Motores</option>
-					  <option value="15">Música</option>
-					  <option value="16">Notícias</option>
-					  <option value="17">Publicidade</option>
-					  <option value="18">Reações</option>
-					  <option value="19">Viagens e Lugares</option>
-					  <option value="20">Vida e Lazer</option>
-					</select>
+				 	 <option value="">Categorias</option>
+					 <c:forEach var="categoria" items="${listaCategorias}">
+						<option value="${categoria.id}">${categoria.descricao}</option>
+					 </c:forEach>
+				  </select>
 				  </div>
 				  <div class="field">
 				    <label for="url-enviar">Url</label>
-				    <input type="url" name="url-enviar" placeholder="www.URL.com.br/memeloco">
+				    <input type="url" id="url" name="url-enviar" placeholder="www.URL.com.br/memeloco">
 				  </div>
 				  <div class="field">
 				    <label for="tag-enviar">Tags(Separar tags por Vírgula)</label>
-				    <input type="text" name="tag-enviar" placeholder="trump,dilma,simpsons,gatos">
+				    <input type="text" id="tag" name="tag-enviar" placeholder="trump,dilma,simpsons,gatos">
 				  </div>
 				  <div class="field">
 				  	<input type="file"/>
 				  </div>
-				  	
-				  	<button class="ui red fluid button" type="submit">
-				  		<i class="send icon"></i>
-				  		Enviar dica
-				  	</button>
 			  </form>
+			  	<button class="ui red fluid button" id="enviar-dica">
+				  	<i class="send icon"></i>
+				  		Enviar dica
+				</button>
 			</div>
 		</div>
 	<div class="ui fixed inverted menu">

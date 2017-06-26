@@ -48,9 +48,9 @@ public class ConteudoService {
 	public void insertConteudo(Conteudo conteudo) throws SQLException{
 		String sql = null;
 		PreparedStatement stmt = null;
-		if(conteudo.getId() > 0){
+		if(conteudo.getId() <= 0){
 		sql = "insert into conteudo "
-					+ "(nome,url,data_cadastro,data_atualizacao,aprovado,criador,categoria,sub_categoria) "
+					+ "(nome,url,data_cadastro,data_atualizacao,aprovado,criador,categoria,sub_categoria,tags,views) "
 					+ "values (?,?,?,?,?,?,?,?,?,?)";
 		} else {
 		sql = "update conteudo "
@@ -62,6 +62,8 @@ public class ConteudoService {
 					+ "criador= ?,"
 					+ "categoria= ?,"
 					+ "sub_categoria= ? "
+					+ "tags= ? "
+					+ "views= ? "
 					+ "where id =" + conteudo.getId();
 		}
 		stmt = conn.prepareStatement(sql);
@@ -97,5 +99,21 @@ public class ConteudoService {
 			conteudo.setViews(rs.getInt("views"));
 		}	
 		return conteudo;
+	}
+	
+	public ArrayList<ConteudoCategoria> getAllSubCategorias() throws SQLException {
+		Statement stmt = conn.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from sub_categoria");
+		ArrayList<ConteudoCategoria> listaCategorias = new ArrayList<ConteudoCategoria>();
+		
+		while(rs.next()){
+			ConteudoCategoria categoria = new ConteudoCategoria();
+			
+			categoria.setId(rs.getInt("id"));
+			categoria.setDescricao(rs.getString("descricao"));;
+			
+			listaCategorias.add(categoria);
+		}
+		return listaCategorias;
 	}
 }

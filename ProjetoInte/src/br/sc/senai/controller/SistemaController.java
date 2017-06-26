@@ -3,13 +3,18 @@ package br.sc.senai.controller;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.sc.senai.model.Conteudo;
+import br.sc.senai.model.ConteudoCategoria;
 import br.sc.senai.service.ConteudoService;
 
 @Controller
@@ -25,14 +30,18 @@ public class SistemaController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView index() throws SQLException {
 		ArrayList<Conteudo> listaConteudo = service.getAllConteudo();
+		ArrayList<ConteudoCategoria> listaCategorias = service.getAllSubCategorias();
 		ModelAndView modelAndView = new ModelAndView("index");
 		modelAndView.addObject("listaConteudos", listaConteudo);
+		modelAndView.addObject("listaCategorias", listaCategorias);
 		return modelAndView;
 	}
 	
 	@RequestMapping(value = "/categorias", method = RequestMethod.GET)
 	public ModelAndView categorias() throws SQLException {
+		ArrayList<ConteudoCategoria> listaCategorias = service.getAllSubCategorias();
 		ModelAndView modelAndView = new ModelAndView("categorias");
+		modelAndView.addObject("listaCategorias", listaCategorias);
 		return modelAndView;
 	}
 	@RequestMapping(value = "/catimg", method = RequestMethod.GET)
