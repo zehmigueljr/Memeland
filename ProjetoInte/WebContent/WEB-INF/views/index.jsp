@@ -27,7 +27,7 @@
 		<a class="item" id="btn-enviar-dica">
 			Enviar dica
 		</a>
-		<a class="item">
+		<a class="item" id="btn-contato">
 			Contato
 		</a>
 		<a class="item btn-login">
@@ -156,7 +156,7 @@
 				<form class="ui form">
 				  <div class="field">
 				  <label>Categorias</label>
-				  <select class="ui fluid search dropdown" multiple="">
+				  <select class="ui fluid search dropdown">
 				 	 <option value="">Categorias</option>
 					 <c:forEach var="categoria" items="${listaCategorias}">
 						<option value="${categoria.id}">${categoria.descricao}</option>
@@ -181,6 +181,59 @@
 				</button>
 			</div>
 		</div>
+	<div class="ui small modal" id="modal-contato">
+	<i class="close icon"></i>
+		<div class="header">
+			Contato
+		</div>
+		<div class="content">
+			<div class="ui equal width grid">
+				<div class="row">
+					<div class="four wide column">
+						<img src="resources/medias/joker.jpg" class="ui fluid image">
+					</div>
+					<div class="column">
+						<div class="ui header">Marcos Henrique Stüber Dreveck</div>
+						<div class="content">Telefone (000)0000-0000</div>	
+						
+						<div class="content">
+							<button class="ui black icon button">
+						  	  <i class="facebook icon"></i>
+							</button>
+							<button class="ui black icon button">
+							  <i class="twitter icon"></i>
+							</button>
+							<button class="ui black icon button">
+							  <i class="instagram icon"></i>
+							</button>	
+						</div>
+					</div>			
+				</div>
+				<div class="row">
+					<div class="four wide column">
+						<img src="resources/medias/ze.jpg" class="ui fluid image">
+					</div>
+					<div class="column">
+						<div class="ui header">José Miguel da Silveira Junior</div>
+						<div class="content">Telefone (000)0000-0000</div>	
+						
+						<div class="content">
+							<button class="ui black icon button">
+						  	  <i class="facebook icon"></i>
+							</button>
+							<button class="ui black icon button">
+							  <i class="twitter icon"></i>
+							</button>
+							<button class="ui black icon button">
+							  <i class="instagram icon"></i>
+							</button>	
+						</div>
+					</div>			
+				</div>
+							
+			</div>
+		</div>
+	</div>
 	<div class="ui fixed inverted menu">
 		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">

@@ -260,7 +260,7 @@
 					  </div>
 					  <div class="field">
 				  		<label>Categorias</label>
-					 	 <select class="ui fluid search dropdown" multiple="">
+					 	 <select class="ui fluid search dropdown">
 						  <option value="">Categorias</option>
 						  <option value="1">Animação</option>
 						  <option value="2">Animais</option>

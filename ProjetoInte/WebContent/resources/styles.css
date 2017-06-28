@@ -54,6 +54,13 @@ body{
 #motivo-reprovacao{
 	padding-bottom:15px;
 }
+.img-meme{
+	max-height:70vh;
+	max-width:60vw;
+	margin-bottom:10px;
+	
+}
+
 
 @media screen and (max-width: 500px){
 	.mobile-invisivel {

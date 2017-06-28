@@ -14,6 +14,9 @@ $('#btn-enviar-dica').click(function(){
 $('#btn-reprovar-meme').click(function(){
 	$('#motivo-reprovacao').modal('show');
 });
+$('#btn-contato').click(function(){
+	$('#modal-contato').modal('show');
+});
 
 $('.ui.checkbox').checkbox();
 
