@@ -17,6 +17,9 @@ $('#btn-reprovar-meme').click(function(){
 $('#btn-contato').click(function(){
 	$('#modal-contato').modal('show');
 });
+$('#btn-esqueceu').click(function(){
+	$('#modal-esqueceu').modal('show');
+});
 
 $('.ui.checkbox').checkbox();
 

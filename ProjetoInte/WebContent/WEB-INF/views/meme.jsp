@@ -244,7 +244,7 @@
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="eight wide computer sixtenn wide mobile column">
 				<div class="ui red inverted segment" id="info-meme">
-					<img src="../${meme.url}" class="ui big centered image img-meme">
+					<img src="../${meme.url}" class="ui big centered image">
 				
 				<form class="ui form">
 				  <div class="field">

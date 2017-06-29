@@ -19,19 +19,19 @@
 		<img src="resources/medias/logotipo.png" id="logo-menu-lateral">
 		<div class="ui divider"></div>
 		<a href="/ProjetoInte" class="item">
-			Home
+			<i class="home large icon"></i>Home
 		</a>
 		<a class="item" href="./categorias">
-			Categorias
+			<i class="browser large icon"></i>Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
-			Enviar dica
+			<i class="idea large icon"></i>Enviar dica
 		</a>
 		<a class="item" id="btn-contato">
-			Contato
+			<i class="comments large icon"></i>Contato
 		</a>
 		<a class="item btn-login">
-			Login
+			<i class="sign in large icon"></i>Login
 		</a>
 	</div>
 	<div class="ui small modal" id="modal-login">
@@ -85,7 +85,8 @@
 						    <label for="password-login">Senha</label>
 						    <input type="password" name="password-login" placeholder="Informe sua senha">
 						  </div>
-						  <div class="ui error message"></div>
+						  <a href="#" id="btn-esqueceu">Dificuldade em acessar? Clique aqui</a>
+						  <div class="ui error message"></div>  
 						</form>
 						<div class="ui two bottom attached buttons">
 						  	<button class="ui facebook  button" id="btn-cadastro">Cadastre-se</button>
@@ -95,6 +96,34 @@
 					<div class="computer only column"></div>
 				</div>
 			</div>	
+		</div>
+	</div>
+	<div class="ui small modal" id="modal-esqueceu">
+			<i class="close icon"></i>
+		<div class="header">
+			Dificuldades no acesso
+		</div>
+		<div class="content" >
+			<form class="ui form">
+				<div class="field">
+				<label>	Caso não lembra sua <b>Senha</b> nos informe o seu e-mail que enviaremos o procedimento para a recuperação em seu.
+				</label>
+				    <input type="email" name="email-login" placeholder="example@memeland.com.br">
+			  	</div>
+			</form>
+		<div class="ui divider"></div>
+			
+			<form class="ui form">
+				<div class="field">
+				<label> Caso não lembra seu e-mail informe seu <b>Nome de usuário</b> que enviaremos o procedimento para a recuperação em seu e-mail cadastrado.
+				</label>
+				    <input type="text" name="nome-user" placeholder="Meu Nome de Usuário">
+			  	</div>
+			</form>
+		</div>
+		<div class="actions">
+			<button class="ui negative button"><i class="remove icon"></i>Cancelar</button>
+			<button class="ui positive button"><i class="send icon"></i>Enviar</button>
 		</div>
 	</div>
 	<div class="ui small modal" id="modal-cadastro">
@@ -245,7 +274,7 @@
   			</div>
 		<div class="right menu">
    			<a class="item mobile-invisivel btn-login">
-				Login
+				<i class="sign in large icon"></i>Login
 			</a>
 	   		<a class="item" id="btn-menu">
 	   			<i class="ui large content icon"></i>
