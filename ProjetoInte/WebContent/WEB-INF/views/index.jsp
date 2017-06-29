@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html lang="pt-br">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,23 +19,23 @@
 		<img src="resources/medias/logotipo.png" id="logo-menu-lateral">
 		<div class="ui divider"></div>
 		<a href="/ProjetoInte" class="item">
-			<i class="home large icon"></i>Home
+			<i class="home large icon"> </i>Home
 		</a>
 		<a class="item" href="./categorias">
-			<i class="browser large icon"></i>Categorias
+			<i class="browser large icon"> </i>Categorias
 		</a>
 		<a class="item" id="btn-enviar-dica">
-			<i class="idea large icon"></i>Enviar dica
+			<i class="idea large icon"> </i>Enviar dica
 		</a>
 		<a class="item" id="btn-contato">
-			<i class="comments large icon"></i>Contato
+			<i class="comments large icon"> </i>Contato
 		</a>
 		<a class="item btn-login">
-			<i class="sign in large icon"></i>Login
+			<i class="sign in large icon">  </i>Login
 		</a>
 	</div>
 	<div class="ui small modal" id="modal-login">
-		<i class="close icon"></i>
+		<i class="close icon"> </i>
 		<div class="header">
 			Login
 		</div>
@@ -45,7 +45,7 @@
 					<div class="computer only column"></div>
 					<div class="eight wide computer sixteen wide mobile column">
 						<button class="ui large labeled icon fluid facebook button">
-						  <i class="facebook icon"></i>
+						  <i class="facebook icon"> </i>
 						   Login com Facebook
 						</button>
 					</div>
@@ -56,7 +56,7 @@
 					<div class="computer only column"></div>
 					<div class="eight wide computer sixteen wide mobile column">
 						<button class="ui large labeled icon fluid twitter button">
-						  <i class="twitter icon"></i>
+						  <i class="twitter icon"> </i>
 						  	Login com Twitter
 						</button>
 					</div>
@@ -67,7 +67,7 @@
 					<div class="computer only column"></div>
 					<div class="eight wide computer sixteen wide mobile column">
 						<button class="ui large labeled icon fluid google plus button">
-						  <i class="google plus icon"></i>
+						  <i class="google plus icon"> </i>
 						  	Login com Google Plus
 						</button>
 					</div>
@@ -99,7 +99,7 @@
 		</div>
 	</div>
 	<div class="ui small modal" id="modal-esqueceu">
-			<i class="close icon"></i>
+			<i class="close icon"> </i>
 		<div class="header">
 			Dificuldades no acesso
 		</div>
@@ -112,7 +112,6 @@
 			  	</div>
 			</form>
 		<div class="ui divider"></div>
-			
 			<form class="ui form">
 				<div class="field">
 				<label> Caso não lembra seu e-mail informe seu <b>Nome de usuário</b> que enviaremos o procedimento para a recuperação em seu e-mail cadastrado.
@@ -122,12 +121,12 @@
 			</form>
 		</div>
 		<div class="actions">
-			<button class="ui negative button"><i class="remove icon"></i>Cancelar</button>
-			<button class="ui positive button"><i class="send icon"></i>Enviar</button>
+			<button class="ui negative button"><i class="remove icon"> </i>Cancelar</button>
+			<button class="ui positive button"><i class="send icon"> </i>Enviar</button>
 		</div>
 	</div>
 	<div class="ui small modal" id="modal-cadastro">
-		<i class="close icon"></i>
+		<i class="close icon"> </i>
 		<div class="header">
 			Cadastro
 		</div>
@@ -167,7 +166,7 @@
 			  </div>
 			  <div class="field">
 			    <div class="ui checkbox" data-validate="termosuso">
-			      <input type="checkbox" tabindex="0" class="hidden" data-validate="termosuso">
+			      <input type="checkbox" class="hidden" data-validate="termosuso">
 			      <label>Eu concordo com os termos e condições de uso deste site</label>
 			    </div>
 			  </div>
@@ -177,7 +176,7 @@
 		</div>
 	</div>
 	<div class="ui small modal" id="modal-enviar-dica">
-			<i class="close icon"></i>
+			<i class="close icon"> </i>
 			<div class="header">
 				Envie uma dica!
 			</div>
@@ -205,13 +204,13 @@
 				  </div>
 			  </form>
 			  	<button class="ui red fluid button" id="enviar-dica">
-				  	<i class="send icon"></i>
+				  	<i class="send icon"> </i>
 				  		Enviar dica
 				</button>
 			</div>
 		</div>
 	<div class="ui small modal" id="modal-contato">
-	<i class="close icon"></i>
+	<i class="close icon"> </i>
 		<div class="header">
 			Contato
 		</div>
@@ -227,13 +226,13 @@
 						
 						<div class="content">
 							<button class="ui black icon button">
-						  	  <i class="facebook icon"></i>
+						  	  <i class="facebook icon"> </i>
 							</button>
 							<button class="ui black icon button">
-							  <i class="twitter icon"></i>
+							  <i class="twitter icon"> </i>
 							</button>
 							<button class="ui black icon button">
-							  <i class="instagram icon"></i>
+							  <i class="instagram icon"> </i>
 							</button>	
 						</div>
 					</div>			
@@ -248,13 +247,13 @@
 						
 						<div class="content">
 							<button class="ui black icon button">
-						  	  <i class="facebook icon"></i>
+						  	  <i class="facebook icon"> </i>
 							</button>
 							<button class="ui black icon button">
-							  <i class="twitter icon"></i>
+							  <i class="twitter icon"> </i>
 							</button>
 							<button class="ui black icon button">
-							  <i class="instagram icon"></i>
+							  <i class="instagram icon"> </i>
 							</button>	
 						</div>
 					</div>			
@@ -263,28 +262,29 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui fixed inverted menu">
+	<header class="ui fixed inverted menu">
+	<h1 class="invisivel">Memeland</h1>
 		<a href="/ProjetoInte"><img src="resources/medias/logotipo.png" id="logo-superior"></a>
 		<div class="ui category search item" id="busca">
      			<div class="ui icon input">
        			<input class="prompt" type="text" placeholder="Busca memes...">
-       			<i class="search link icon"></i>
+       			<i class="search link icon"> </i>
     			</div>
     			<div class="results"></div>
   			</div>
 		<div class="right menu">
    			<a class="item mobile-invisivel btn-login">
-				<i class="sign in large icon"></i>Login
+				<i class="sign in large icon"> </i>Login
 			</a>
-	   		<a class="item" id="btn-menu">
-	   			<i class="ui large content icon"></i>
-	   		</a>
+	   		<div class="item" id="btn-menu">
+	   			<i class="ui large content icon"> </i>
+	   		</div>
  		</div>
-	</div>
+	</header>
 	<div class="pushable content-margin-top">
 	<div class="ui equal width grid content-margin-lateral ">
 		<div class="column">
-			<h3 class="header texto-branco">+ Recentes</h3>
+			<h2 class="header texto-branco">+ Recentes</h2>
 			<div class="ui stackable two column grid">
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column" data-id=${conteudo.id }><a href="media/${conteudo.id}"><img src="${conteudo.url}" class="img-home"></a></div>
@@ -292,7 +292,7 @@
 			</div>
 		</div>		
 		<div class="column">
-			<h3 class="header texto-branco">+ Visualizados</h3>
+			<h2 class="header texto-branco">+ Visualizados</h2>
 			<div class="ui stackable two column grid">
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column" data-id=${conteudo.id }><a href="media/${conteudo.id}"><img src="${conteudo.url}" class="img-home"></a></div>
@@ -300,7 +300,7 @@
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
-			<h3 class="header texto-branco">Tops</h3>
+			<h2 class="header texto-branco">Tops</h2>
 			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
 			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
 			

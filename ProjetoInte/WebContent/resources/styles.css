@@ -60,6 +60,9 @@ body{
 	margin-bottom:10px;
 	
 }
+.invisivel{
+	display: none;
+}
 
 
 @media screen and (max-width: 500px){
