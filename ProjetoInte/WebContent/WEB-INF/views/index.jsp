@@ -284,7 +284,7 @@
 	<div class="pushable content-margin-top">
 	<div class="ui equal width grid content-margin-lateral ">
 		<div class="column">
-			<h2 class="header texto-branco">+ Recentes</h2>
+			<h3 class="header texto-branco">+ Recentes</h3>
 			<div class="ui stackable two column grid">
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column" data-id=${conteudo.id }><a href="media/${conteudo.id}"><img src="${conteudo.url}" class="img-home"></a></div>
@@ -292,7 +292,7 @@
 			</div>
 		</div>		
 		<div class="column">
-			<h2 class="header texto-branco">+ Visualizados</h2>
+			<h3 class="header texto-branco">+ Visualizados</h3>
 			<div class="ui stackable two column grid">
 				<c:forEach var="conteudo" items="${listaConteudos}">
 					<div class="column" data-id=${conteudo.id }><a href="media/${conteudo.id}"><img src="${conteudo.url}" class="img-home"></a></div>
@@ -300,7 +300,7 @@
 			</div>
 		</div>
 		<div class="two wide column mobile-invisivel center aligned">
-			<h2 class="header texto-branco">Tops</h2>
+			<h3 class="header texto-branco">Tops</h3>
 			<a><img src="resources/medias/joker.jpg" class="img-home"></a>
 			<a><img src="resources/medias/ze.jpg" class="img-home"></a>
 			
