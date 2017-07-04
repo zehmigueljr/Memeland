@@ -156,7 +156,7 @@
 				<form class="ui form">
 				  <div class="field">
 				  <label>Categorias</label>
-				  <select class="ui fluid search dropdown" multiple="">
+				  <select class="ui fluid search dropdown" id=categoria-dica>
 				 	 <option value="">Categorias</option>
 					 <c:forEach var="categoria" items="${listaCategorias}">
 						<option value="${categoria.id}">${categoria.descricao}</option>
@@ -172,7 +172,7 @@
 				    <input type="text" id="tag" name="tag-enviar" placeholder="trump,dilma,simpsons,gatos">
 				  </div>
 				  <div class="field">
-				  	<input type="file"/>
+				  	<input type="file"/ id="file-dica">
 				  </div>
 			  </form>
 			  	<button class="ui red fluid button" id="enviar-dica">

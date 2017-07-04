@@ -21,7 +21,28 @@ $('.ui.dropdown').dropdown({
   allowAdditions: true
 });
 
-$('#enviar-dica').click(function(){
+$('#aprovar-dica').click(function(){
+	var data = {}; 
+		data['id'] = $('#aprovar-meme').data('id');
+	console.log(data);
+	$.ajax({ 
+	    url: "aprovardica",
+	    type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+	    success: function(data){
+	    }
+	});
+});
+
+$('#enviar-dica').parent().click(function(){
+	var filearq = $('#file-dica')[0].files[0];
+	var fileName = filearq.name;
+	
+	console.log(file);
+	console.log(fileName);
+	
 	var data = {};
 		data["id"] = 0;
 		data["nome"] = '';
@@ -30,26 +51,27 @@ $('#enviar-dica').click(function(){
 		data["dataAtualizacao"] = '';
 		data["aprovado"] = 0;
 		data["criador"] = 0;
-		data["categoria"] = 1;
-		data["subCategoria"] = 1;
-		data["tags"] = $('tag').val();
+		data["categoria"] = 0;
+		data["subCategoria"] = $('#categoria-dica').val();
+		data["tags"] = $('#tag').val();
 		data["views"] = 0
-		console.log(data);
-		console.log(JSON.stringify(data));
 
+	var file = new FormData();
+		file.append('file', filearq, fileName);
+		file.append('data', new Blob([JSON.stringify(data)], { type:"application/json"}));
 	
+	console.log(file);	
 	$.ajax({ 
-	    url: "enviardica", 
-	    headers: { 
-	        'Accept': 'application/json',
-	        'Content-Type': 'application/json' 
+	    url: "enviardica",
+	    headers: {
+	         "Content-Type": undefined
 	    },
 	    type:"POST",
-	    data: JSON.stringify(data),
-	    dataType: "json",
-	    async: false,
-	    cache: false,        
-	    processData:false,
+	    data: file,
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,       
+	    processData: false,
 	    success: function(data){
 	    }
 	});

@@ -216,7 +216,7 @@
 			    <textarea rows="2"></textarea>
 			  </div>
 			  <div class="actions">
-			    <div class="ui positive right floated button"><i class="thumbs down icon"></i>Reprovar</div>
+			    <div class="ui positive right floated button" id="reprovar-dica"><i class="thumbs down icon"></i>Reprovar</div>
 			    <div class="ui negative right floated button"><i class="remove icon"></i>Cancelar</div>
 			  </div>
 			</div>
@@ -243,7 +243,7 @@
 	<div class="pushable content-margin-top">
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="column">
-				<img src="../${meme.url}" class="img-home">	
+				<img src="${meme.url}" class="img-home">	
 					
 			</div>
 			<div class="eight wide computer sixtenn wide mobile column">

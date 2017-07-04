@@ -3,14 +3,10 @@ package br.sc.senai.controller;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.sc.senai.model.Conteudo;
@@ -61,17 +57,24 @@ public class SistemaController {
 		return modelAndView;
 	}
 	
-	@RequestMapping(value = "/aprovaadmin", method = RequestMethod.GET)
-	public ModelAndView aprovaadmin() throws SQLException {
-		ModelAndView modelAndView = new ModelAndView("aprovaadmin");
+	@RequestMapping(value = "/media/{id}", method = RequestMethod.GET)
+	public ModelAndView meme(@PathVariable int id) throws SQLException {
+		Conteudo meme = service.getConteudo(id, false);
+		service.setViewConteudo(id);
+		ModelAndView modelAndView = new ModelAndView("meme");
+		modelAndView.addObject("meme", meme);
 		return modelAndView;
 	}
 	
-	@RequestMapping(value = "/media/{id}", method = RequestMethod.GET)
-	public ModelAndView meme(@PathVariable int id) throws SQLException {
-		Conteudo meme = service.getConteudo(id);
-		ModelAndView modelAndView = new ModelAndView("meme");
+	@RequestMapping(value = "/aprovaadmin", method = RequestMethod.GET)
+	public ModelAndView aprovaAdmin() throws SQLException {
+		int id = 0;
+		ArrayList<ConteudoCategoria> listaCategorias = service.getAllSubCategorias();
+		Conteudo meme = service.getConteudo(id, true);
+		System.out.println(meme.getId());
+		ModelAndView modelAndView = new ModelAndView("aprovaadmin");
 		modelAndView.addObject("meme", meme);
+		modelAndView.addObject("listaCategorias", listaCategorias);
 		return modelAndView;
 	}
 }

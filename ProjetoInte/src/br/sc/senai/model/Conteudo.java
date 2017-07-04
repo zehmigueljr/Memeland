@@ -2,6 +2,8 @@ package br.sc.senai.model;
 
 import java.sql.Date;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class Conteudo {
 	
 	private int id;

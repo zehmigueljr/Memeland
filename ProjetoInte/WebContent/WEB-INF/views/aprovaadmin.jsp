@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -244,11 +245,17 @@
 		<div class="ui equal width grid content-margin-lateral ">
 			<div class="column">
 				<h2 class="header texto-branco">Aprovador de memes</h2>
-				<img src="resources/medias/1.gif" class="img-home">		
+				<c:if test="${meme.id > 0}">
+    				<img src="${meme.url}" class="img-home">		
+				</c:if>			
 			</div>
-			<div class="five wide computer sixtenn wide mobile column">
+			<c:if test="${meme.id == 0}">
+    			<h2>Não há memes para serem aprovados!</h2>
+			</c:if>
+			<c:if test="${meme.id > 0}">
+				<div class="five wide computer sixtenn wide mobile column">
 				<h3 class="header texto-branco">Info. meme</h3>
-				<div class="ui red top attached segment" id="aprovar-meme">
+				<div class="ui red top attached segment" id="aprovar-meme" data-id=${meme.id }>
 					<form class="ui form">
 					  <div class="field">
 					    <label>Autor</label>
@@ -262,31 +269,14 @@
 				  		<label>Categorias</label>
 					 	 <select class="ui fluid search dropdown" multiple="">
 						  <option value="">Categorias</option>
-						  <option value="1">Animação</option>
-						  <option value="2">Animais</option>
-						  <option value="3">Animes</option>
-						  <option value="4">Arte</option>
-						  <option value="5">Artistas</option>
-						  <option value="6">Blogs e Pessoas</option>
-						  <option value="7">Cartoon</option>
-						  <option value="8">Ciência e Tecnologia</option>
-						  <option value="9">Cinema</option>
-						  <option value="10">Esportes</option>
-						  <option value="11">Entretenimento</option>
-						  <option value="12">Games</option>
-						  <option value="13">Humor</option>
-						  <option value="14">Motores</option>
-						  <option value="15">Música</option>
-						  <option value="16">Notícias</option>
-						  <option value="17">Publicidade</option>
-						  <option value="18">Reações</option>
-						  <option value="19">Viagens e Lugares</option>
-						  <option value="20">Vida e Lazer</option>
+					 		<c:forEach var="categoria" items="${listaCategorias}">
+								<option value="${categoria.id}" ${meme.subCategoria == categoria.id ? 'selected' : ''}>${categoria.descricao}</option>
+					 		</c:forEach>
 						</select>
 				  	</div>
 					  <div class="field">
 					    <label>Tags</label>
-					    <input type="text" name="tags-meme" placeholder="Tags">
+					    <input type="text" name="tags-meme" placeholder="Tags" value="${meme.tags}">
 					  </div>
 					  <div class="grouped fields">
 					    <label>Tipo</label>
@@ -307,9 +297,10 @@
 				</div>
 				<div class="ui two bottom attached buttons">
 				    <div class="ui negative button" id="btn-reprovar-meme"><i class="thumbs down icon"></i>Reprovar</div>
-				    <div class="ui positive button" id="btn-aprovar-meme"><i class="thumbs up icon"></i>Aprovar</div>
+				    <div class="ui positive button" id="btn-aprovar-meme"><i class="thumbs up icon" id="aprovar-dica"></i>Aprovar</div>
 				</div>
 			</div>
+			</c:if>
 			<div class="two wide column mobile-invisivel center aligned">
 				<h3 class="header texto-branco">Tops</h3>
 				<a><img src="resources/medias/joker.jpg" class="img-home"></a>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context>  
+<Context allowCasualMultipartParsing="true">  
   
     <Resource name="jdbc/memeland"   
               auth="Container"  
@@ -9,5 +9,5 @@
               driverClassName="com.mysql.jdbc.Driver"   
               url="jdbc:mysql://localhost:3306/memeland?useTimezone=true&amp;serverTimezone=UTC"  
               maxActive="100"   
-              maxIdle="30"/>  
+              maxIdle="30"/> 
 </Context>  
