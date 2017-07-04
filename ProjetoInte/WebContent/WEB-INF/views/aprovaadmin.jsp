@@ -267,7 +267,7 @@
 					  </div>
 					  <div class="field">
 				  		<label>Categorias</label>
-					 	 <select class="ui fluid search dropdown" multiple="">
+					 	 <select class="ui fluid search dropdown">
 						  <option value="">Categorias</option>
 					 		<c:forEach var="categoria" items="${listaCategorias}">
 								<option value="${categoria.id}" ${meme.subCategoria == categoria.id ? 'selected' : ''}>${categoria.descricao}</option>

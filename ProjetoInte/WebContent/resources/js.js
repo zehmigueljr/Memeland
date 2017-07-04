@@ -14,6 +14,12 @@ $('#btn-enviar-dica').click(function(){
 $('#btn-reprovar-meme').click(function(){
 	$('#motivo-reprovacao').modal('show');
 });
+$('#btn-contato').click(function(){
+	$('#modal-contato').modal('show');
+});
+$('#btn-esqueceu').click(function(){
+	$('#modal-esqueceu').modal('show');
+});
 
 $('.ui.checkbox').checkbox();
 
@@ -32,6 +38,8 @@ $('#aprovar-dica').click(function(){
         contentType: "application/json; charset=utf-8",
         dataType: "json",
 	    success: function(data){
+	    	//('#dica-aprovada').modal('show');
+	    	window.location = "/aprovaadmin";
 	    }
 	});
 });
@@ -73,6 +81,7 @@ $('#enviar-dica').parent().click(function(){
         contentType: false,       
 	    processData: false,
 	    success: function(data){
+	    	//$('#dica-enviada').modal('show');
 	    }
 	});
 });

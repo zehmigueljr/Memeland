@@ -160,7 +160,7 @@
 				<form class="ui form">
 				  <div class="field">
 				  <label>Categorias</label>
-				  <select class="ui fluid search dropdown" multiple="">
+				  <select class="ui fluid search dropdown">
 					  <option value="">Categorias</option>
 					  <option value="1">Animação</option>
 					  <option value="2">Animais</option>
@@ -242,15 +242,52 @@
 	</div>
 	<div class="pushable content-margin-top">
 		<div class="ui equal width grid content-margin-lateral ">
-			<div class="column">
-				<img src="${meme.url}" class="img-home">	
-					
-			</div>
 			<div class="eight wide computer sixtenn wide mobile column">
+				<div class="ui red inverted segment" id="info-meme">
+					<img src="${meme.url}" class="ui big centered image">
 				
+				<form class="ui form">
+				  <div class="field">
+				    <label class="texto-branco">Autor</label>
+				    <input type="text"  name="autor-meme" value="Nome do Autor">
+				  </div>
+				  <div class="field">
+				    <label class="texto-branco">Categoria</label>
+				    <input type="text" name="categoria-meme" value="Categoria">
+				  </div>
+				  <div class="field">
+				    <label class="texto-branco">Tags</label>
+				    <input type="text" name="tags-meme" value="Tags">
+				  </div>
+				  <label class="texto-branco">Compartilhar</label>
+					<div class="ui inverted segment">
+					 <button class="ui facebook icon button">
+					  <i class="facebook icon"></i>
+					</button>
+					<button class="ui twitter icon button">
+					  <i class="twitter icon"></i>
+					</button>
+					<button class="ui google plus   icon button">
+					  <i class="google plus icon"></i>
+					</button>
+					<button class="ui instagram icon button">
+					  <i class="instagram icon"></i>
+					</button>	
+				  </div>
+				 </form>
 			</div>
-		</div>	
+		</div>
+			<div class="eight wide computer sixtenn wide mobile column">
+				<div class="ui stackable two column grid">
+					<div class="column"><a href="../media/${meme.id}"><img src="${meme.url}" class="img-home"></a></div>
+					<div class="column"><a href="../media/${meme.id}"><img src="${meme.url}" class="img-home"></a></div>
+					<div class="column"><a href="../media/${meme.id}"><img src="${meme.url}" class="img-home"></a></div>
+					<div class="column"><a href="../media/${meme.id}"><img src="${meme.url}" class="img-home"></a></div>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	
 
 	<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
